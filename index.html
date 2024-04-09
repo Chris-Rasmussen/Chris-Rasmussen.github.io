@@ -16,15 +16,23 @@
             margin: auto;
             padding: 20px;
         }
-        h1, h2 {
+        h1 {
+            text-align: center; /* Center align name */
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            text-align: center; /* Center align contact info */
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 0; /* Remove default margin */
+        }
+        h2 {
             margin-bottom: 20px;
         }
         h2 {
             border-bottom: 1px solid #ccc;
             padding-bottom: 5px;
-        }
-        .contact-info {
-            margin-bottom: 20px;
         }
         .summary {
             margin-bottom: 30px;
@@ -39,13 +47,8 @@
         }
         .experience {
             margin-bottom: 30px;
-        }
-        .experience-details {
-            display: flex;
-            justify-content: space-between;
-        }
-        .experience-date {
-            text-align: right;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
         .projects {
             margin-bottom: 30px;
@@ -60,7 +63,7 @@
             text-align: right;
             color: #666;
             margin-bottom: 5px;
-            float: right;
+            float: right; /* Align to the right */
         }
     </style>
 </head>
@@ -73,13 +76,11 @@
             </div>
         </header>
 
-        <!-- Summary -->
         <div class="summary">
             <h2>Summary</h2>
             <p>Proficient in problem solving, communication, and troubleshooting. Experience in tech support using Mac software/hardware. Seeking internship, part-time, full-time position in the field of Software Development.</p>
         </div>
 
-        <!-- Education -->
         <div class="education">
             <div>
                 <h2>Education</h2>
@@ -100,7 +101,6 @@
             </div>
         </div>
 
-        <!-- Skills -->
         <div class="skills">
             <h2>Skills</h2>
             <p>Languages: Python, HTML, Java, CSS, JavaScript, C#, R</p>
@@ -109,36 +109,35 @@
             <p>Notable Skills: Problem Solving, Adaptability, Communication, Code Writing/Troubleshooting, Leadership, Critical Thinking</p>
         </div>
 
-        <!-- Experience -->
         <div class="experience">
-            <h2>Experience</h2>
-            <div class="experience-details">
-                <div>
-                    <p>Joseph C. Caruso School Internship: I.T/Tech Support Keansburg High School</p>
-                </div>
-                <div class="experience-date">
-                    <p>November 2019 - March 2020</p>
-                </div>
+            <div>
+                <h2>Experience</h2>
+                <p>Joseph C. Caruso School Internship: I.T/Tech Support Keansburg High School</p>
+            </div>
+            <div>
+                <p>November 2019 - March 2020</p>
+                <ul>
+                    <li>Designs, operates or maintains technology products.</li>
+                    <li>Provides service with software, hardware, databases, web resources, networks and enterprise systems.</li>
+                    <li>Specialize in network management, software development and database administration.</li>
+                    <li>Designs systems and assess the effectiveness of technology resources already in use or new systems that are being implemented.</li>
+                </ul>
             </div>
         </div>
 
-        <!-- Projects -->
         <div class="projects">
             <h2>Projects</h2>
             <div class="project">
-                <div class="project-title"><strong>Spotify Data Analysis</strong></div>
-                <div class="project-date">February-March 2023</div>
-                <div>A Python data analysis of the top listened to artists on Spotify and their average streams per day. An overall evaluation of who is running the music charts. Libraries used include pandas, numPy, and matplotlib.</div>
+                <div class="project-title"><strong>Spotify Data Analysis</strong><span class="project-date">February-March 2023</span></div>
+                <div>https://github.com/Chris-Rasmussen/Project_1<br>A Python data analysis of the top listened to artists on Spotify and their average streams per day. An overall evaluation of who is running the music charts. Libraries used include pandas, numPy, and matplotlib.</div>
             </div>
             <div class="project">
-                <div class="project-title"><strong>Python Library Exploration</strong></div>
-                <div class="project-date">March-April 2023</div>
-                <div>A Python project designed to explore three different python libraries and their abilities. Libraries used include pygame, phue, and music21.</div>
+                <div class="project-title"><strong>Python Library Exploration</strong><span class="project-date">March-April 2023</span></div>
+                <div>https://github.com/Chris-Rasmussen/Project_2<br>A Python project designed to explore three different python libraries and their abilities. Libraries used include pygame, phue, and music21.</div>
             </div>
             <div class="project">
-                <div class="project-title"><strong>Weather Prediction Software</strong></div>
-                <div class="project-date">April-May 2023</div>
-                <div>A Python project designed to create a weather prediction software using machine learning with data from the NOAA. Libraries used include pandas.</div>
+                <div class="project-title"><strong>Weather Prediction Software</strong><span class="project-date">April-May 2023</span></div>
+                <div>https://github.com/Chris-Rasmussen/Project_3<br>A Python project designed to create a weather prediction software using machine learning with data from the NOAA. Libraries used include pandas.</div>
             </div>
         </div>
     </div>
