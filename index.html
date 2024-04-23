@@ -16,21 +16,26 @@
             margin: auto;
             padding: 20px;
         }
+        header {
+            display: flex;
+            align-items: center; 
+        }
+        .header-img {
+            width: 100px; 
+            margin-right: 20px; 
+        }
         h1 {
-            text-align: center; /* Center align name */
             margin-bottom: 20px;
         }
         .contact-info {
-            text-align: center; /* Center align contact info */
+            text-align: center;
             margin-bottom: 20px;
         }
         .contact-info p {
-            margin: 0; /* Remove default margin */
+            margin: 0;
         }
         h2 {
             margin-bottom: 20px;
-        }
-        h2 {
             border-bottom: 1px solid #ccc;
             padding-bottom: 5px;
         }
@@ -63,16 +68,19 @@
             text-align: right;
             color: #666;
             margin-bottom: 5px;
-            float: right; 
+            float: right;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>CHRISTIAN RASMUSSEN</h1>
-            <div class="contact-info">
-                <p>29 Willis Ave. Keansburg, NJ 07734 | 732-778-3438 | chris1247028@gmail.com</p>
+            <img class="header-img" src="images/picture.jpeg" alt="Profile Picture"> 
+            <div>
+                <h1>CHRISTIAN RASMUSSEN</h1>
+                <div class="contact-info">
+                    <p>29 Willis Ave. Keansburg, NJ 07734 | 732-778-3438 | chris1247028@gmail.com</p>
+                </div>
             </div>
         </header>
 
