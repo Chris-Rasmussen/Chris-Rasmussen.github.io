@@ -15,7 +15,6 @@
             max-width: 800px;
             margin: auto;
             padding: 20px;
-            
         }
         header {
             display: flex;
@@ -26,51 +25,65 @@
             margin-right: 20px; 
         }
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 5px;
             align-self: center;
         }
         .contact-info {
-            text-align: center;
+            text-align: left;
             margin-bottom: 20px;
+            font-size: 0.95em;
         }
         .contact-info p {
             margin: 0;
         }
         h2 {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border-bottom: 1px solid #ccc;
             padding-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 1.2em;
         }
-        .summary {
+        .summary, .education, .skills, .experience, .projects {
             margin-bottom: 30px;
         }
-        .education {
-            margin-bottom: 30px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
         }
-        .skills {
-            margin-bottom: 30px;
+        .entry-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            margin-bottom: 10px;
         }
-        .experience {
-            margin-bottom: 30px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .projects {
-            margin-bottom: 30px;
-        }
-        .project {
-            margin-bottom: 20px;
+        .skills p {
+            margin: 5px 0;
         }
         .project-title {
             font-weight: bold;
+            display: flex;
+            justify-content: space-between;
         }
-        .project-date {
-            text-align: right;
-            color: #666;
+        .project-subtitle {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        li {
             margin-bottom: 5px;
-            float: right;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -81,77 +94,118 @@
             <div>
                 <h1>CHRISTIAN RASMUSSEN</h1>
                 <div class="contact-info">
-                    <p>29 Willis Ave. Keansburg, NJ 07734 | 732-778-3438 | chris1247028@gmail.com</p>
+                    <p>732-778-3438 | chris1247028@gmail.com | linkedin.com/in/christian-rasmussen124 | <a href="https://github.com/Chris-Rasmussen">github.com/Chris-Rasmussen</a></p>
                 </div>
             </div>
         </header>
 
         <div class="summary">
             <h2>Summary</h2>
-            <p>Proficient in problem solving, communication, and troubleshooting. Experience in tech support using Mac software/hardware. Seeking internship, part-time, full-time position in the field of Software Development.</p>
+            <p>Bachelor's of Science in Computer Science. Master of Science in Computer Science with a focus on AI/Machine Learning. Proficient with Python, Java, and HTML. Great passion for problem solving and has great communication and collaborative skills. Seeking entry-level position for Fall 2026.</p>
         </div>
 
         <div class="education">
-            <div>
-                <h2>Education</h2>
-                <p>Kean University - Union, NJ</p>
-                <p>B.S Computer Science - Expected May 2024</p>
-                <p>GPA: 3.2</p>
-                <p>Dean’s List: Spring: 2022, 2023 Fall: 2023</p>
+            <h2>Education</h2>
+            <div class="entry-header">
+                <span>Kean University</span>
+                <span>Union, NJ</span>
             </div>
-            <div>
-                <h2>Coursework</h2>
-                <ul>
-                    <li>Software Engineering</li>
-                    <li>Analysis of Algorithms</li>
-                    <li>Data Structures</li>
-                    <li>Computer Operating Systems</li>
-                    <li>Python Programming</li>
-                </ul>
+            <div class="entry-subheader">
+                <span>Master of Science in Computer Science</span>
+                <span>January 2025 - May 2026</span>
             </div>
+            <ul>
+                <li><strong>GPA:</strong> 3.95 | <strong>Focus:</strong> AI & Machine Learning</li>
+                <li><strong>Relevant Coursework:</strong> Adv. AI & ML, Adv. Analysis of Algorithms, Adv. Software Engineering, Database Systems, Computer Operating Systems, Data Mining</li>
+                <li><strong>Honors:</strong> UPE Honor Society</li>
+            </ul>
+
+            <div class="entry-header" style="margin-top: 20px;">
+                <span>Kean University</span>
+                <span>Union, NJ</span>
+            </div>
+            <div class="entry-subheader">
+                <span>Bachelor of Science in Computer Science</span>
+                <span>September 2020 - May 2024</span>
+            </div>
+            <ul>
+                <li><strong>GPA:</strong> 3.4</li>
+                <li><strong>Relevant Coursework:</strong> Analysis of Algorithms, Software Engineering, Data Structures, Operating Systems, Software Dev with Frameworks</li>
+                <li><strong>Honors:</strong> Dean's List (Spring 2022, 2023, 2024; Fall 2023)</li>
+                <li><strong>Certifications:</strong> Foundational C# with Microsoft</li>
+            </ul>
         </div>
 
         <div class="skills">
-            <h2>Skills</h2>
-            <p><strong>Languages:</strong> Python, HTML, Java, CSS, JavaScript, C#, R</p>
-            <p><strong>Tools & Frameworks:</strong> React, NodeJS</p>
-            <p><strong>Operating Systems:</strong> MacOS, Windows, iOS</p>
-            <p><strong>Notable Skills:</strong> Problem Solving, Adaptability, Communication, Code Writing/Troubleshooting, Leadership, Critical Thinking</p>
+            <h2>Technical Skills</h2>
+            <p><strong>Languages:</strong> Python, Java, SQL, HTML/CSS, C#, JavaScript, R, PHP</p>
+            <p><strong>Frameworks & Libraries:</strong> React, Node.js, Flask, Pandas, SvelteKit, Matter.js</p>
+            <p><strong>Tools:</strong> Git, Google Colab, LaTeX, Docker, Ngrok, XAMPP, Tailscale</p>
+            <p><strong>Operating Systems:</strong> MacOS, iOS, Windows, Linux</p>
         </div>
 
         <div class="experience">
-            <div>
-                <h2>Experience</h2>
-                <p>Joseph C. Caruso School Internship: I.T/Tech Support Keansburg High School</p>
+            <h2>Experience</h2>
+            <div class="entry-header">
+                <span>JY Computer Services</span>
+                <span>Marlboro, NJ</span>
             </div>
-            <div>
-                <p>November 2019 - March 2020</p>
-                <ul>
-                    <li>Designs, operates or maintains technology products.</li>
-                    <li>Provides service with software, hardware, databases, web resources, networks and enterprise systems.</li>
-                    <li>Specialize in network management, software development and database administration.</li>
-                    <li>Designs systems and assess the effectiveness of technology resources already in use or new systems that are being implemented.</li>
-                </ul>
+            <div class="entry-subheader">
+                <span>IT/Tech Support Intern</span>
+                <span>Oct 2024 - Dec 2024</span>
             </div>
+            <ul>
+                <li>Provided comprehensive technical support for software, hardware, and database systems, ensuring minimal downtime for clients.</li>
+                <li>Managed network systems and performed hardware maintenance and repairs.</li>
+                <li>Assessed and optimized existing technology resources to improve system effectiveness and facilitate the implementation of new systems.</li>
+                <li>Collaborated directly with clients and team members to diagnose technical issues and deliver timely solutions.</li>
+            </ul>
         </div>
 
         <div class="projects">
             <h2>Projects</h2>
-            <div class="project">
-                <div class="project-title"><a href="https://github.com/Chris-Rasmussen/Project_1"><strong>Spotify Data Analysis</strong></a></div>
-                <div class="project-date">February-March 2023</div>
-                <div>A Python data analysis of the top listened to artists on Spotify and their average streams per day. An overall evaluation of who is running the music charts. Libraries used include pandas, numPy, and matplotlib.</div>
+            
+            <div class="project" style="margin-bottom: 20px;">
+                <div class="project-title">
+                    <span><a href="https://github.com/Chris-Rasmussen">Illuminate: AI Science Sandbox</a></span>
+                    <span>Jan 2026 - Mar 2026</span>
+                </div>
+                <div class="project-subtitle">Python, Svelte, Phi-3.5, Flask</div>
+                <ul>
+                    <li>Collaborated on a web-based educational platform that teaches Physics, Chemistry, and Circuitry through open-ended experimentation and a custom-hosted Socratic AI companion.</li>
+                    <li>Managed AI integration by deploying a local Small Language Model (Phi-3.5) via Ollama, designing a prompt architecture that delivers age-appropriate hints without revealing direct solutions.</li>
+                    <li>Implemented dynamic simulation engines, including a Matter.js 2D physics environment and a BFS-based electrical circuit solver to evaluate live game states in real-time.</li>
+                    <li>Developed a generative secondary system for the Chemistry module, using JSON-mode inference to describe outcomes for non-standard element combinations not found in static lookup tables.</li>
+                    <li>Built a lightweight Python Flask backend to manage multi-domain game states and route requests between local SLMs and cloud-based models based on performance needs.</li>
+                </ul>
             </div>
-            <div class="project">
-                <div class="project-title"><a href="https://github.com/Chris-Rasmussen/Roommate-Expense-Tracker"><strong>Roommate Expense Tracker</strong></a></div>
-                <div class="project-date">September-December 2023</div>
-                <div>A user-friendly application crafted to aid individuals in effectively managing shared household expenses. A group project that utilizes the Software Development LifeCycle and its methodolgies. Uses HTML, CSS, JavaScript, Python, & PHP. </div>
+
+            <div class="project" style="margin-bottom: 20px;">
+                <div class="project-title">
+                    <span><a href="https://github.com/Chris-Rasmussen/Project_3">Rotten Fruit Detection</a></span>
+                    <span>Jan 2024 - May 2024</span>
+                </div>
+                <div class="project-subtitle">Python, Flask, HTML, CSS, ML</div>
+                <ul>
+                    <li>Developed a web-based detection system utilizing machine learning models to classify fruit freshness from user-uploaded photos.</li>
+                    <li>Built the backend using Python and Flask, integrated with Ngrok for tunneling and Google Colab for training.</li>
+                    <li>Implemented frontend interfaces using HTML and CSS for seamless user interaction.</li>
+                </ul>
             </div>
+
             <div class="project">
-                <div class="project-title"><a href="https://github.com/Chris-Rasmussen/Project_3"><strong>Weather Prediction Software</strong></a></div>
-                <div class="project-date">April-May 2023</div>
-                <div>A Python project designed to create a weather prediction software using machine learning<br> with data from the NOAA. Libraries used include pandas.</div>
+                <div class="project-title">
+                    <span><a href="https://github.com/Chris-Rasmussen/Roommate-Expense-Tracker">Roommate Expense Tracker</a></span>
+                    <span>Sep 2023 - Dec 2023</span>
+                </div>
+                <div class="project-subtitle">PHP, Python, JS, HTML, CSS</div>
+                <ul>
+                    <li>Engineered a user-friendly application to streamline shared household expense management.</li>
+                    <li>Executed the project using Software Development Life Cycle (SDLC) methodologies.</li>
+                    <li>Constructed the application utilizing PHP, Python, and JavaScript for robust functionality.</li>
+                </ul>
             </div>
+
         </div>        
     </div>
 </body>
